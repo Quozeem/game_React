@@ -1,0 +1,70 @@
+$body-font-family: "Poppings", sans-serif;
+$font--button: "karla", sans-serif;
+body {
+  margin: 0;
+  font-size: $body-font-family;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-template-columns: 45% 35% 15%;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 20px;
+  color: white;
+  //   grid-auto-rows: minmax(100px, auto);
+  //   grid-auto-columns: minmax(100px, auto);
+  // padding: 2em;
+  //   display: flex;
+  //   align-items: center;
+  height: 95px;
+  > div {
+    justify-self: stretch;
+    align-self: stretch;
+    //  padding: 1em;
+    .logo {
+      margin-right: 6px;
+      height: 50px;
+    }
+    .haeder--title {
+      margin-right: auto;
+      font-size: 1em;
+    }
+    .haeder--project {
+      margin-right: auto;
+      font-size: 0.67em;
+      font-weight: 600;
+    }
+  }
+}
+main {
+  padding: 36px;
+}
+.form--grid {
+  // padding: 50px;
+  gap: 17px;
+  padding: 36px;
+  display: grid;
+  grid-template: 40px 40px/1fr 1fr;
+  .form--input {
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #d5d4d8;
+    text-indent: 4px;
+    width: 100%;
+  }
+}
+.form--button {
+  grid-column: 1/-1;
+  font-family: $font--button;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: WHITE;
+  border: none;
+
+  border: 1px solid #d5d4d8;
+}
